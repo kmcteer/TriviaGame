@@ -93,6 +93,7 @@ var trivia = {
 
         // to prevent timer speed up
         if (!trivia.timerOn) {
+            clearInterval(trivia.timerId)
             trivia.timerId = setInterval(trivia.timerRunning, 1000);
         }
 
